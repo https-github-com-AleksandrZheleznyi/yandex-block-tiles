@@ -1,6 +1,9 @@
 let filledProgress = null;
-function UnityProgress(progress)
+function UnityProgress(unityInstance, progress)
 {
+  if (!unityInstance.Module)
+    return;
+  
   if(!filledProgress)
   {
       filledProgress = document.getElementById("loader-progress__filled");
@@ -19,9 +22,6 @@ function UnityProgress(progress)
 // value - 0 to 1
 function setLoaderProgressTo(value, duration)
 {
-    if(duration == null)
-        duration = 300;
-    
     filledProgress.animate(
         [
             { width: (value * 100) + "%" }
