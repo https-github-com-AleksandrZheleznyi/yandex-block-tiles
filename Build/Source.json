@@ -3,7 +3,7 @@
 "productName": "Block Tiles 3D",
 "productVersion": "0.1",
 "dataUrl": "Source.data.unityweb",
-"wasmCodeUrl": "Source.wasm",
+"wasmCodeUrl": "Source.wasm.code.unityweb",
 "wasmFrameworkUrl": "Source.wasm.framework.unityweb",
 "graphicsAPI": ["WebGL 1.0"],
 "webglContextAttributes": {"preserveDrawingBuffer": false},
